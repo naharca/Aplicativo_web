@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="R3.js" defer></script>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="icon" href="./assets/cat_icon.jpeg" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" type="text/javascript" defer></script>
+    <title>R3</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="wrapper-image">
+          <img src="./assets/cat.jpg" alt="Gatito" />
+          <div class="play-button-container">
+            <a href="#" class="play-button" onclick="modal()">
+              <img class="play" src="./assets/play.svg" alt="Play Button" />
+            </a>
+          </div>
+        </div>
+
+        <div class="text">
+          <h1>This cats will make you laugh, it's a promise.</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+            earum ad quia deserunt minima quidem incidunt, aspernatur autem
+            corrupti sequi. Beatae quisquam maiores impedit! Deleniti inventore
+            temporibus aspernatur consequuntur et.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="video display-none">
+      <iframe
+        width="560"
+        height="320"
+        src="https://www.youtube.com/embed/dySXYB33wPI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <a href="#" onclick="hideModal()">
+        <img src="./assets/close.svg" alt="close" class="close" />
+      </a>
+    </div>
+  </body>
 </html>
