@@ -25,15 +25,13 @@ p {
 .content {
   width: 100%;
   display: flex;
-
 }
 
-.wrapper-image{
+.wrapper-image {
   position: relative;
   width: 35%;
 }
 .wrapper-image img {
-
   width: 25rem;
 }
 .text {
@@ -93,7 +91,7 @@ p {
 }
 
 @media screen and (max-width: 425px) {
-  .container{
+  .container {
     overflow: hidden;
     padding: 0;
   }
@@ -101,9 +99,8 @@ p {
     margin: 0;
     padding: 0;
     display: block;
-  
   }
-  .wrapper-image{
+  .wrapper-image {
     width: 100%;
   }
   .wrapper-image img {
@@ -127,16 +124,14 @@ p {
     width: 100%;
     padding: 0.5rem;
   }
-  .text p{
+  .text p {
     font-size: 1.3rem;
     line-height: 1.8rem;
     padding-left: 0.5rem;
-    
   }
-  .text h1{
+  .text h1 {
     font-size: 2rem;
     padding-left: 0.5rem;
-
   }
   .video {
     position: absolute;
@@ -145,7 +140,7 @@ p {
     width: 100%;
     background: rgb(0, 0, 0);
   }
-  
+
   .play-button-container img {
     position: absolute;
     cursor: pointer;
@@ -166,6 +161,4 @@ p {
     height: 80%;
     position: absolute;
   }
-  
-
 }

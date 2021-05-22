@@ -1,0 +1,114 @@
+/*Generales*/
+* {
+  margin: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(95, 92, 92, 0.932);
+}
+/*Diseño General Tabla de Datos*/
+.table-container {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: rgb(58, 57, 57);
+}
+.table-container th {
+  border: 0.1rem solid rgb(150, 149, 149);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.3rem;
+}
+
+.table-container span {
+  font-weight: 100;
+  margin-left: 5rem;
+}
+
+.table-container tr td {
+  border: 0.1rem solid rgb(150, 149, 149);
+  padding: 0.3rem;
+}
+.table-container tr:nth-child(even) {
+  background-color: rgba(180, 176, 176, 0.692);
+}
+
+/* Responsive Mobile */
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .table-container tr {
+    margin: 0;
+    display: block;
+    border: none;
+    border-radius: 0.3rem;
+    border-bottom: 0.3rem rgba(150, 149, 149, 0.651) solid;
+  }
+  .table-container tr:first-child {
+    display: none;
+  }
+
+  .table-container td {
+    margin: 0.3rem;
+    text-align: right;
+    font-size: 0.5rem;
+    display: block;
+  }
+
+  .table-container td:before {
+    content: attr(label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .table-container thead {
+    display: none;
+  }
+}
+
+/*Responsive Tablet*/
+
+@media screen and (max-width: 768px) {
+  .table-container thead {
+    display: none;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+
+  .table-container tr {
+    margin: 0;
+    display: block;
+    border: none;
+    border-radius: 0.3rem;
+    border-bottom: 0.3rem rgba(150, 149, 149, 0.651) solid;
+  }
+  .table-container tr:first-child {
+    display: none;
+  }
+
+  .table-container td {
+    margin: 0.5rem;
+    text-align: right;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .table-container td:before {
+    content: attr(label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
